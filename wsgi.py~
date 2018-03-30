@@ -12,9 +12,5 @@ def hello_world():
     json_str = json.dumps(news, indent=2)
     return json_str
 
-@app.route("/test")
-def test():
-    return "Hutt"
-
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
